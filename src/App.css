@@ -1,38 +1,68 @@
 .App {
   text-align: center;
+  font-family: "Comic Sans MS";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  min-height: 10rem;
+  box-shadow: 10px 5px 5px #D3D3D3;
+  min-width: 15rem;
+  max-width: 15rem;
+  background-color: #F5F5DC;
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  font-weight: bold;
+  color: #5b5a5a;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.divider {
+  width: 100%;
+  margin: 0px;
+  border-bottom: 1px solid #5b5a5a;
+}
+
+.task-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.task {
+  min-width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-text {
+  margin-left: 5px;
+}
+
+.task-desc {
+  max-width: 80%;
 }
